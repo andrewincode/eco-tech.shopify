@@ -34,9 +34,7 @@
           <div class="card card-transparent m-b-0">
             <div class="card-header separator">
               <div class="card-title">
-                {% if section.settings.section-heading != blank %}
                   <h2 class="fs-18">Sustainability<br> Innovation<br> Beauty</h2>
-                {% endif %}
               </div>
             </div>
             <div class="card-body">
@@ -56,7 +54,8 @@
 <!-- Homepage Banner Schema . start -->
   {% schema %}
     {
-      "name": "Welcome", // Section name
+      "name": "Homepage Banner", // Section name
+      "tag": "section",
       "settings": [
         {
           "id": "section-heading",
@@ -91,7 +90,7 @@
       ],
       "presets": [
         {
-          "name": "Welcome section Test",
+          "name": "Homepage Banner",
           "category": "ADVANCED LAYOUT"
         }
     ]

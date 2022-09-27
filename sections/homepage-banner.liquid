@@ -54,7 +54,7 @@
 <!-- Homepage Banner Schema . start -->
   {% schema %}
     {
-      "name": "Homepage Banner",
+      "name": "Homepage Banner", // Section name
       "tag": "section",
       "max_blocks": 2,
       "settings": [
@@ -81,7 +81,12 @@
       ],
       "blocks": [
         {
-          "type": "@app"
+          "type": "@app",
+          "name": "Slideshow",
+          "target": "section",
+          "templates": "index",
+          "settings": [
+          ]
         }
       ],
       "presets": [

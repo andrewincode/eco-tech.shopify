@@ -51,52 +51,9 @@
     </div>
   </div>
 <!-- Homepage Banner Section . end -->
-<!-- Homepage Banner Schema . start -->
   {% schema %}
-    {
-      "name": "Homepage Banner", // Section name
-      "tag": "section",
-      "max_blocks": 2,
-      "settings": [
-        {
-          "id": "welcome-heading",
-          "type": "textarea",
-          "label": "Heading 1"
-        }
-        {
-          "id": "welcome-content",
-          "type": "textarea",
-          "label": "Description"
-        },
-        {
-          "id": "welcome-link",
-          "type": "url",
-          "label": "Button URL"
-        },
-        {
-          "id": "welcome-button",
-          "type": "text",
-          "label": "Learn More >"
-        }
-      ],
-      "blocks": [
-        {
-          "type": "@app",
-          "name": "Slideshow",
-          "target": "section",
-          "templates": "index",
-          "settings": [
-          ]
-        }
-      ],
-      "presets": [
-        {
-          "name": "Homepage Banner",
-          "category": "ADVANCED LAYOUT"
-        }
-    ]
-    }
   {% endschema %}
+<!-- Homepage Banner Schema . start -->
 <!-- Homepage Banner Schema . end -->
 <!-- Homepage Banner Styling . start -->
   {% stylesheet %}

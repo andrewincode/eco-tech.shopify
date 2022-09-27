@@ -323,6 +323,8 @@
 				<p class="small no-margin pull-right sm-pull-reset">
 
 					<ul class="menu">
+						{% for link in linklists.main-menu.links %}
+
 					  {% for link in section.settings.menu.links %}
 					    <li class="menu-link">
 					      <a href="{{ link.url }}">{{ link.title }}</a>
@@ -348,6 +350,7 @@
 					      {% endif %}
 					    </li>
 					  {% endfor %}
+{% endfor %}
 					</ul>
 
 

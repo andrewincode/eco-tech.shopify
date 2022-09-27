@@ -1,0 +1,116 @@
+hr {
+	 margin: 20px 0;
+}
+hr.minimal {
+	margin: 0;
+}
+.horizontal-app-menu .header .header-md-height {
+    height: 30px;
+}
+.welcome ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.welcome ul li {
+	display: inline-block;
+	padding: 3px 0;
+}
+.welcome ul li a {
+	color: blue;
+}
+.feature-1 img {
+	min-width: 100%;
+	max-height: 200px;
+}
+.feature-1a img {
+	min-width: 100%;
+	max-height: 200px;
+}
+.feature-2 img {
+	min-width: 100%;
+	max-height: 200px;
+}
+.feature-1 .img {
+	max-width: 100%;
+	max-height: 200px;
+	overflow: hidden;
+}
+.feature-1a .img {
+	max-width: 100%;
+	max-height: 200px;
+	overflow: hidden;
+}
+.feature-2 .img {
+	max-width: 100%;
+	max-height: 200px;
+	overflow: hidden;
+}
+.btn-group.text-left .btn {
+	text-align: left !important;
+	justify-content: left !important;
+	font-weight: 400 !important;
+}
+.jumbotron {
+	background: transparent;
+}
+#inner_page .jumbotron {
+	background: #fff;
+}
+.breadcrumb {
+	padding: 1px 0;
+}
+h1.page-title {
+	font-size: 28px;
+}
+h1.page-title span {
+	font-size: 16px;
+	line-height:  19px;
+	font-style: italics;
+	display: block;
+}
+.product-price p {
+	font-size:  28px;
+}
+.inspiration-image {
+	max-width:  100%;
+	overflow:  hidden;
+}
+.inspiration-image img {
+	max-width:  100%;
+}
+.carousel-item {
+    height: 500px;
+    }
+.carousel-caption {
+    bottom: 5.25rem;
+}
+.card-content {
+}
+.social-card h3 {
+	font-size:  18px;
+	line-height: 23px;
+}
+.separator {
+	margin-bottom:  20px;
+}
+
+/* Font Sizing */
+
+.fs-8 {font-size: 8px !important}
+.fs-9 {font-size: 9px !important}
+.fs-10 {font-size: 10px !important}
+.fs-11 {font-size: 11px !important}
+.fs-12 {font-size: 12px !important}
+.fs-13 {font-size: 13px !important}
+.fs-14 {font-size: 14px !important}
+.fs-15 {font-size: 15px !important}
+.fs-16 {font-size: 16px !important}
+.fs-17 {font-size: 17px !important}
+.fs-18 {font-size: 18px !important; line-height: 25px !important;}
+.fs-19 {font-size: 19px !important}
+.fs-20 {font-size: 20px !important}
+.fs-21 {font-size: 21px !important}
+.fs-22 {font-size: 22px !important}
+.fs-23 {font-size: 23px !important}
+.fs-24 {font-size: 24px !important}

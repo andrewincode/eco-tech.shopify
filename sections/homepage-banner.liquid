@@ -54,7 +54,42 @@
 <!-- Homepage Banner Schema . start -->
   {% schema %}
     {
-      "name": "Homepage Banner", // Section name
+      "name": "Homepage Banner",
+      "tag": "section",
+      "max_blocks": 2,
+      "settings": [
+        {
+          "id": "welcome-heading",
+          "type": "textarea",
+          "label": "Heading 1"
+        }
+        {
+          "id": "welcome-content",
+          "type": "textarea",
+          "label": "Description"
+        },
+        {
+          "id": "welcome-link",
+          "type": "url",
+          "label": "Button URL"
+        },
+        {
+          "id": "welcome-button",
+          "type": "text",
+          "label": "Learn More >"
+        }
+      ],
+      "blocks": [
+        {
+          "type": "@app"
+        }
+      ],
+      "presets": [
+        {
+          "name": "Homepage Banner",
+          "category": "ADVANCED LAYOUT"
+        }
+    ]
     }
   {% endschema %}
 <!-- Homepage Banner Schema . end -->

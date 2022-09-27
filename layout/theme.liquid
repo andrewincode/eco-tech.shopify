@@ -8,6 +8,7 @@
     </title>
     {% if page_description %}
     <meta name="description" content="{{ page_description | escape }}" /> {% endif %}
+	<link rel="icon" type="image/x-icon" href="favicon.ico" />
     {{ 'pace-theme-flash.css' | asset_url | stylesheet_tag }}
     {{ 'bootstrap.min.css' | asset_url | stylesheet_tag }}
     {{ 'font-awesome.css' | asset_url | stylesheet_tag }}

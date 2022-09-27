@@ -56,11 +56,11 @@
 					<div class="card-content page-banner">
 						<div class="row  d-flex flex-row collage">
 								<!--<img src="content/demo/slide1.jpeg" class="col col-lg-8" />-->
-								<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+								<div id="carouselHomepage" class="carousel slide" data-ride="carousel">
 									<ol class="carousel-indicators">
-										<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-										<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-										<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+										<li data-target="#carouselHomepage" data-slide-to="0" class="active"></li>
+										<li data-target="#carouselHomepage" data-slide-to="1"></li>
+										<li data-target="#carouselHomepage" data-slide-to="2"></li>
 									</ol>
 									<div class="carousel-inner">
 										<div class="carousel-item active">
@@ -73,11 +73,11 @@
 											<img class="d-block w-100" src="..." alt="Third slide">
 										</div>
 									</div>
-									<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+									<a class="carousel-control-prev" href="#carouselHomepage" role="button" data-slide="prev">
 										<span class="carousel-control-prev-icon" aria-hidden="true"></span>
 										<span class="sr-only">Previous</span>
 									</a>
-									<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+									<a class="carousel-control-next" href="#carouselHomepage" role="button" data-slide="next">
 										<span class="carousel-control-next-icon" aria-hidden="true"></span>
 										<span class="sr-only">Next</span>
 									</a>
@@ -516,20 +516,23 @@
 			</div>
     		{{ content_for_layout }}
     	</div>
-	{{ 'pace.min.js' | asset_url | script_tag }}
-	{{ 'liga.js' | asset_url | script_tag }}
-	{{ 'jquery-3.2.1.min.js' | asset_url | script_tag }}
-	{{ 'modernizr.custom.js' | asset_url | script_tag }}
-	{{ 'popper.min.js' | asset_url | script_tag }}
-	{{ 'bootstrap.min.js' | asset_url | script_tag }}
-	{{ 'jquery-easy.js' | asset_url | script_tag }}
-	{{ 'jquery.unveil.min.js' | asset_url | script_tag }}
-	{{ 'jquery.ioslist.min.js' | asset_url | script_tag }}
-	{{ 'jquery.actual.min.js' | asset_url | script_tag }}
-	{{ 'jquery.scrollbar.min.js' | asset_url | script_tag }}
-	{{ 'select2.full.min.js' | asset_url | script_tag }}
-	{{ 'classie.js' | asset_url | script_tag }}
-	{{ 'pages.min.js' | asset_url | script_tag }}
-	{{ 'scripts.js' | asset_url | script_tag }}
+		{{ 'pace.min.js' | asset_url | script_tag }}
+		{{ 'liga.js' | asset_url | script_tag }}
+		{{ 'jquery-3.2.1.min.js' | asset_url | script_tag }}
+		{{ 'modernizr.custom.js' | asset_url | script_tag }}
+		{{ 'popper.min.js' | asset_url | script_tag }}
+		{{ 'bootstrap.min.js' | asset_url | script_tag }}
+		{{ 'jquery-easy.js' | asset_url | script_tag }}
+		{{ 'jquery.unveil.min.js' | asset_url | script_tag }}
+		{{ 'jquery.ioslist.min.js' | asset_url | script_tag }}
+		{{ 'jquery.actual.min.js' | asset_url | script_tag }}
+		{{ 'jquery.scrollbar.min.js' | asset_url | script_tag }}
+		{{ 'select2.full.min.js' | asset_url | script_tag }}
+		{{ 'classie.js' | asset_url | script_tag }}
+		{{ 'pages.min.js' | asset_url | script_tag }}
+		{{ 'scripts.js' | asset_url | script_tag }}
+		<script>
+			$('.carousel').carousel()
+		</script>
   	</body>
 </html>

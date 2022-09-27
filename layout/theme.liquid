@@ -8,34 +8,34 @@
     </title>
     {% if page_description %}
     <meta name="description" content="{{ page_description | escape }}" /> {% endif %}
-    {{ 'css/pace-theme-flash.css' | asset_url | stylesheet_tag }}
-    {{ 'css/bootstrap.min.css' | asset_url | stylesheet_tag }}
-    {{ 'css/font-awesome.css' | asset_url | stylesheet_tag }}
-    {{ 'css/jquery.scrollbar.css' | asset_url | stylesheet_tag }}
-    {{ 'css/select2.min.css' | asset_url | stylesheet_tag }}
-    {{ 'css/pages.css' | asset_url | stylesheet_tag }}
+    {{ 'pace-theme-flash.css' | asset_url | stylesheet_tag }}
+    {{ 'bootstrap.min.css' | asset_url | stylesheet_tag }}
+    {{ 'font-awesome.css' | asset_url | stylesheet_tag }}
+    {{ 'jquery.scrollbar.css' | asset_url | stylesheet_tag }}
+    {{ 'select2.min.css' | asset_url | stylesheet_tag }}
+    {{ 'pages.css' | asset_url | stylesheet_tag }}
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
-    {{ 'css/style.css' | asset_url | stylesheet_tag }}
-    {{ 'css/ecotech.css' | asset_url | stylesheet_tag }}
-    {{ 'css/colours.css' | asset_url | stylesheet_tag }}
+    {{ 'style.css' | asset_url | stylesheet_tag }}
+    {{ 'ecotech.css' | asset_url | stylesheet_tag }}
+    {{ 'colours.css' | asset_url | stylesheet_tag }}
     {{ content_for_header }}
   </head>
   <body>
     {{ content_for_layout }}
-	{{ 'js/pace.min.js' | asset_url | script_tag }}
-	{{ 'js/liga.js' | asset_url | script_tag }}
-	{{ 'js/jquery-3.2.1.min.js' | asset_url | script_tag }}
-	{{ 'js/modernizr.custom.js' | asset_url | script_tag }}
-	{{ 'js/popper.min.js' | asset_url | script_tag }}
-	{{ 'js/bootstrap.min.js' | asset_url | script_tag }}
-	{{ 'js/jquery-easy.js' | asset_url | script_tag }}
-	{{ 'js/jquery.unveil.min.js' | asset_url | script_tag }}
-	{{ 'js/jquery.ioslist.min.js' | asset_url | script_tag }}
-	{{ 'js/jquery.actual.min.js' | asset_url | script_tag }}
-	{{ 'js/jquery.scrollbar.min.js' | asset_url | script_tag }}
-	{{ 'js/select2.full.min.js' | asset_url | script_tag }}
-	{{ 'js/classie.js' | asset_url | script_tag }}
-	{{ 'js/pages.min.js' | asset_url | script_tag }}
-	{{ 'js/scripts.js' | asset_url | script_tag }}
+	{{ 'pace.min.js' | asset_url | script_tag }}
+	{{ 'liga.js' | asset_url | script_tag }}
+	{{ 'jquery-3.2.1.min.js' | asset_url | script_tag }}
+	{{ 'modernizr.custom.js' | asset_url | script_tag }}
+	{{ 'popper.min.js' | asset_url | script_tag }}
+	{{ 'bootstrap.min.js' | asset_url | script_tag }}
+	{{ 'jquery-easy.js' | asset_url | script_tag }}
+	{{ 'jquery.unveil.min.js' | asset_url | script_tag }}
+	{{ 'jquery.ioslist.min.js' | asset_url | script_tag }}
+	{{ 'jquery.actual.min.js' | asset_url | script_tag }}
+	{{ 'jquery.scrollbar.min.js' | asset_url | script_tag }}
+	{{ 'select2.full.min.js' | asset_url | script_tag }}
+	{{ 'classie.js' | asset_url | script_tag }}
+	{{ 'pages.min.js' | asset_url | script_tag }}
+	{{ 'scripts.js' | asset_url | script_tag }}
   </body>
 </html>

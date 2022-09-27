@@ -321,7 +321,8 @@
 				<span class="sm-block"><a href="#" class="m-l-10 m-r-10">Products</a> | <a href="#" class="m-l-10 m-r-10">Resources</a> | <a href="#" class="m-l-10">Support</a></span>
 				</p>
 				<p class="small no-margin pull-right sm-pull-reset">
-				<span class="sm-block"><a class="m-l-10 m-r-10" href="#">Terms &amp; Conditions</a> | <a href="#" class="m-l-10 m-r-10">Privacy Policy</a> | <a href="eco.sitemap.html" class="m-l-10 m-r-10">Sitemap</a></span>
+					{% for link in linklists.right-footer.links %}<!-- menu content -->{% endfor %}
+					<!--<span class="sm-block"><a class="m-l-10 m-r-10" href="#">Terms &amp; Conditions</a> | <a href="#" class="m-l-10 m-r-10">Privacy Policy</a> | <a href="eco.sitemap.html" class="m-l-10 m-r-10">Sitemap</a></span>-->
 				</p>
 				<div class="clearfix"></div>
 				</div>

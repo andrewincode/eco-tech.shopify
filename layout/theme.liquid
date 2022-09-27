@@ -10,7 +10,7 @@
     	<meta name="description" content="{{ page_description | escape }}" />
 	{% endif %}
     {%- if settings.favicon != blank -%}
-    	<link rel="shortcut icon" href="{{ settings.favicon | img_url: '32x32' }}" type="image/png">
+    	<link rel="shortcut icon" href="{{ settings.favicon | img_url: '32x32' }}" type="image/ico">
 	{%- endif -%}
     {{ 'pace-theme-flash.css' | asset_url | stylesheet_tag }}
     {{ 'bootstrap.min.css' | asset_url | stylesheet_tag }}

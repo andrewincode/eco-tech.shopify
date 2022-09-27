@@ -24,8 +24,27 @@
     {{ 'colours.css' | asset_url | stylesheet_tag }}
     {{ content_for_header }}
   </head>
-  <body>
-    {{ content_for_layout }}
+  	<body class="eco-page fixed-header horizontal-menu horizontal-app-menu ">
+		<div class="page-container">
+			<div id="section-top" class="container container-fluid sm-gutter no-padding">
+				<div class="header">
+					<div class="header-inner">
+						<a href="#" class="btn-link toggle-sidebar d-lg-none header-icon sm-p-l-0 btn-icon-link" data-toggle="horizontal-menu"><i class="pg-icon">menu</i></a>
+						<div class="">
+							<a href="#" class="search-link d-lg-inline-block d-none" data-toggle="search"><i class="pg-icon">search</i>Type anywhere to <span class="bold">search</span></a>
+						</div>
+						<div class="d-flex align-items-center">
+							<ul class="d-lg-inline-block d-none notification-list no-margin d-lg-inline-block b-grey b-l b-rx no-style p-l-20 p-r-0">
+								<li class="p-r-10 inline"><a href="#" class="header-icon btn-icon-link"><i class="material-icons fs-16">shopping_cart</i><span class="bubble fs-12"><span class="fs-11">3</span></span></a></li>
+								<li class="p-r-10 inline"><a href="#" class="header-icon btn-icon-link"><i class="material-icons fs-16">perm_phone_msg</i></a></li>
+								<li class="p-r-10 inline"><a href="#" class="header-icon btn-icon-link"><i class="material-icons fs-16">share</i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+    		{{ content_for_layout }}
+    	</div>
 	{{ 'pace.min.js' | asset_url | script_tag }}
 	{{ 'liga.js' | asset_url | script_tag }}
 	{{ 'jquery-3.2.1.min.js' | asset_url | script_tag }}
@@ -41,5 +60,5 @@
 	{{ 'classie.js' | asset_url | script_tag }}
 	{{ 'pages.min.js' | asset_url | script_tag }}
 	{{ 'scripts.js' | asset_url | script_tag }}
-  </body>
+  	</body>
 </html>

@@ -315,10 +315,10 @@
 			<div id="section-bottom" class="container container-fluid sm-gutter no-padding">
 				<div class="copyright sm-text-center">
 				<p class="small no-margin pull-left sm-pull-reset">
-				<span class="hint-text">Copyright © 2022</span>
-				<span class="font-montserrat bold">{{ shop.name }}</span>.
-				<span class="hint-text">All rights reserved.</span>
-				<span class="sm-block"><a href="#" class="m-l-10 m-r-10">Products</a> | <a href="#" class="m-l-10 m-r-10">Resources</a> | <a href="#" class="m-l-10">Support</a></span>
+					<span class="hint-text">Copyright &copy; {{ 'now' | date: "%Y" }}</span>
+					<span class="font-montserrat bold">{{ shop.name | link_to: routes.root_url }}</span>.
+					<span class="hint-text">All rights reserved.</span>
+					<span class="sm-block"><a href="#" class="m-l-10 m-r-10">Products</a> | <a href="#" class="m-l-10 m-r-10">Resources</a> | <a href="#" class="m-l-10">Support</a></span>
 				</p>
 				<p class="small no-margin pull-right sm-pull-reset">
 

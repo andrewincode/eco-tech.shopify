@@ -274,17 +274,22 @@
 			<div id="section-bottom" class="container container-fluid sm-gutter no-padding">
 				<div class="copyright sm-text-center">
 				<p class="small no-margin pull-left sm-pull-reset">
-					<span class="hint-text">Copyright &copy; {{ 'now' | date: "%Y" }}</span>
-					<span class="font-montserrat bold">{{ shop.name | link_to: routes.root_url }}</span>.
-					<span class="hint-text">All rights reserved.</span>
-					<span class="sm-block"><a href="#" class="m-l-10 m-r-10">Products</a> | <a href="#" class="m-l-10 m-r-10">Resources</a> | <a href="#" class="m-l-10">Support</a></span>
-				</p>
+                  <span class="hint-text">Copyright &copy; {{ 'now' | date: "%Y" }}</span>
+                  <span class="font-montserrat bold">{{ shop.name | link_to: routes.root_url }}</span>.
+                  <span class="hint-text">All rights reserved.</span>
+                  {% for link in linklists.left-footer-menu.links %}
+                    <span class="sm-block">
+                      <a class="m-l-10 m-r-10" href="{{ link.url }}">{{ link.title }}</a>
+                    </span>
+                  {% endfor %}
+                  <!--<span class="sm-block"><a href="#" class="m-l-10 m-r-10">Products</a> | <a href="#" class="m-l-10 m-r-10">Resources</a> | <a href="#" class="m-l-10">Support</a></span>
+                </p>-->
 				<p class="small no-margin pull-right sm-pull-reset">
-                      {% for link in linklists.right-footer-menu.links %}
-                        <span class="sm-block">
-                          <a class="m-l-10 m-r-10" href="{{ link.url }}">{{ link.title }}</a>
-                        </span>
-                      {% endfor %}
+                  {% for link in linklists.right-footer-menu.links %}
+                    <span class="sm-block">
+                      <a class="m-l-10 m-r-10" href="{{ link.url }}">{{ link.title }}</a>
+                    </span>
+                  {% endfor %}
 
 
 

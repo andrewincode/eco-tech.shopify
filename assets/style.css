@@ -103,6 +103,7 @@ h1.page-title span {
 	margin-bottom:  20px;
 }
 #section-bottom .sm-block::before {
+  color: #777;
   content: " | ";
 }
 

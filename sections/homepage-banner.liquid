@@ -31,21 +31,25 @@
       <!-- Slideshow Block . end -->
       <!-- Welcome Block . start -->
         <div class="col col-lg-4 bg-warning no-border">
-          {% for block in section.blocks %}
             <div class="card card-transparent m-b-0">
               <div class="card-header separator">
                 <div class="card-title">
+                  {% for block in section.blocks %}
                     <h2 class="fs-18">{{ block.settings.welcome-heading | newline_to_br }}</h2>
+                  {% endfor %}
                 </div>
               </div>
               <div class="card-body">
-                {{ block.settings.welcome-content | newline_to_br }}
+                {% for block in section.blocks %}
+                  {{ block.settings.welcome-content | newline_to_br }}
+                {% endfor %}
               </div>
               <div class="card-footer">
+                {% for block in section.blocks %}
                   <a href="{{ block.settings.welcome-link }}" class="text-black hint-text text-sm">{{ block.settings.welcome-btn }}</a>
+                {% endfor %}
               </div>
             </div>
-          {% endfor %}
         </div>
       <!-- Welcome Block . end -->
     </div>

@@ -73,25 +73,25 @@ h1.page-title span {
 	font-size:  28px;
 }
 .inspiration-image {
-	max-width:  100%;
-	overflow:  hidden;
+  max-width: 100%;
+  overflow: hidden;
 }
 .inspiration-image img {
-	max-width:  100%;
+  max-width: 100%;
 }
 .carousel, .carousel-item {
   height: 467px;
 }
 .carousel-caption {
-    position: absolute;
-    right: 0%;
-    bottom: 1.25rem;
-    left: 0%;
-    padding-top: 1.25rem;
-    padding-bottom: 1.25rem;
-    color: #fff;
-    text-align: center;
-  rgba(0, 0, 0, .5)
+  position: absolute;
+  right: 0%;
+  bottom: 1.25rem;
+  left: 0%;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  color: #fff;
+  text-align: center;
+  background: rgba(0, 0, 0, .5);
 }
 .card-content {
 }

@@ -1,6 +1,31 @@
 {
   "current": {
     "favicon": "shopify:\/\/shop_images\/favicon.png",
+    "sections": {
+      "homepage-banner": {
+        "type": "homepage-banner",
+        "blocks": {
+          "77dee4e0-9f93-4d44-93d9-d34315e0daaf": {
+            "type": "HTML",
+            "settings": {
+            }
+          },
+          "8c9cceb1-ae8e-4ebb-92e3-7d58ca3947a0": {
+            "type": "text",
+            "settings": {
+              "section-heading": "SUSTAINABILITY\nINNOVATION\nBEAUTY",
+              "section-content": ""
+            }
+          }
+        },
+        "block_order": [
+          "77dee4e0-9f93-4d44-93d9-d34315e0daaf",
+          "8c9cceb1-ae8e-4ebb-92e3-7d58ca3947a0"
+        ],
+        "settings": {
+        }
+      }
+    },
     "content_for_index": [
 
     ]

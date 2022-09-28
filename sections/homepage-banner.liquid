@@ -11,17 +11,17 @@
           <div class="carousel-inner">
             <div class="carousel-item active">
               {% for block in section.blocks %}
-                <img class="d-block w-100" src="{{ block.settings.homepage_slide_img_1 | img_url: '1024x'| img_tag: block.settings.homepage_slide_imgalt_1 }}" alt="First slide">
+                <img class="d-block w-100" src="{{ block.settings.homepage_slide_img_1 | img_url: '1024x'| img_tag }}">
               {% endfor %}}
             </div>
             <div class="carousel-item">
               {% for block in section.blocks %}
-                <img class="d-block w-100" src="{{ block.settings.homepage_slide_img_2 | img_url: '1024x'| img_tag: block.settings.homepage_slide_imgalt_2 }}" alt="First slide">
+                <img class="d-block w-100" src="{{ block.settings.homepage_slide_img_2 | img_url: '1024x'| img_tag }}">
               {% endfor %}}
             </div>
             <div class="carousel-item">
               {% for block in section.blocks %}
-                <img class="d-block w-100" src="{{ block.settings.homepage_slide_img_3 | img_url: '1024x'| img_tag: block.settings.homepage_slide_imgalt_3 }}" alt="First slide">
+                <img class="d-block w-100" src="{{ block.settings.homepage_slide_img_3 | img_url: '1024x'| img_tag }}">
               {% endfor %}}
             </div>
           </div>

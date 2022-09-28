@@ -9,21 +9,6 @@
             <li data-target="#carouselHomepage" data-slide-to="2"></li>
           </ol>
           <div class="carousel-inner">
-            <div class="carousel-item active">
-              {% for block in section.blocks %}
-                <img src="{{ block.settings.homepage_slide_img_1 | img_url:'1024x' | class: 'd-block w-100' }}">
-              {% endfor %}
-            </div>
-            <div class="carousel-item">
-              {% for block in section.blocks %}
-                <img class="d-block w-100" src="{{ block.settings.homepage_slide_img_2 | img_url: '1024x'| img_tag: block.settings.homepage_slide_imgalt_1 }}">
-              {% endfor %}
-            </div>
-            <div class="carousel-item">
-              {% for block in section.blocks %}
-                <img class="d-block w-100" src="{{ block.settings.homepage_slide_img_3 | img_url: '1024x'| img_tag: block.settings.homepage_slide_imgalt_3 }}">
-              {% endfor %}
-            </div>
           </div>
           <a class="carousel-control-prev" href="#carouselHomepage" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>

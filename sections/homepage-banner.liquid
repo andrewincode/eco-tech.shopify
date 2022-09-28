@@ -43,9 +43,11 @@
               <p>Diasen’s products have been used in projects from the restoration and preservation of significant historical buildings to modern homes and public spaces showcasing innovative and sustainable design.</p>
             </div>
             <div class="card-footer">
+              {% for block in section.blocks %}
               {% if section.settings.welcome-btn != blank %}
                 <a href="{{ section.settings.welcome-link }}" class="text-black hint-text text-sm">{{ section.settings.welcome-btn }}</a>
               {% endif %}
+              {% endfor %}
             </div>
           </div>
         </div>

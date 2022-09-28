@@ -11,17 +11,17 @@
           <div class="carousel-inner">
             <div class="carousel-item active">
               {% for block in section.blocks %}
-                <img src="{{ block.settings.homepage_slide_img_1 | image_url | image_tag }}" class="d-block w-100">
+                <img src="{{ block.settings.homepage_slide_img_1 | image_url: 'master' | image_tag: 'alt text' }}" class="d-block w-100">
               {% endfor %}
             </div>
             <div class="carousel-item">
               {% for block in section.blocks %}
-                <img class="d-block w-100" src="{{ block.settings.homepage_slide_img_2 | img_url: '1024x'| img_tag: block.settings.homepage_slide_imgalt_1 }}">
+                <img src="{{ block.settings.homepage_slide_img_1 | image_url: 'master' | image_tag: 'alt text' }}" class="d-block w-100">
               {% endfor %}
             </div>
             <div class="carousel-item">
               {% for block in section.blocks %}
-                <img class="d-block w-100" src="{{ block.settings.homepage_slide_img_3 | img_url: '1024x'| img_tag: block.settings.homepage_slide_imgalt_3 }}">
+                <img src="{{ block.settings.homepage_slide_img_1 | image_url: 'master' | image_tag: 'alt text' }}" class="d-block w-100">
               {% endfor %}
             </div>
           </div>
@@ -81,11 +81,6 @@
              "label": "Homepage Slider Image 1"
             },
             {
-            "id": "homepage_slide_imgalt_1",
-            "type": "text",
-            "label": "Image 1 Description"
-            },
-            {
             "id": "homepage_slide_heading_1",
             "type": "text",
             "label": "Homepage Slider Heading 1"
@@ -101,11 +96,6 @@
              "label": "Homepage Slider Image 2"
             },
             {
-            "id": "homepage_slide_imgalt_2",
-            "type": "text",
-            "label": "Image 2 Description"
-            },
-            {
             "id": "homepage_slide_heading_2",
             "type": "text",
             "label": "Homepage Slider Heading 2"
@@ -119,11 +109,6 @@
              "type": "image_picker",
              "id": "homepage_slide_img_3",
              "label": "Homepage Slider Image 3"
-            },
-            {
-            "id": "homepage_slide_imgalt_3",
-            "type": "text",
-            "label": "Image 3 Description"
             },
             {
             "id": "homepage_slide_heading_3",

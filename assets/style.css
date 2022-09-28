@@ -106,8 +106,8 @@ p.left-footer-menu > span.sm-block::before {
   color: #777;
   content: " | ";
 }
-p.left-footer-menu > span:nth-child(4) {
-  content: "";
+p.left-footer-menu > span.sm-block:nth-child(4)::before {
+  content: none;
 }
 
 /* Font Sizing */

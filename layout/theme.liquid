@@ -280,14 +280,11 @@
 					<span class="sm-block"><a href="#" class="m-l-10 m-r-10">Products</a> | <a href="#" class="m-l-10 m-r-10">Resources</a> | <a href="#" class="m-l-10">Support</a></span>
 				</p>
 				<p class="small no-margin pull-right sm-pull-reset">
-
-					<ul class="menu">
                       {% for link in linklists.right-footer-menu.links %}
-                        <span class="sm-block main-nav__link">
-                          <a href="{{ link.url }}">{{ link.title }}</a>
+                        <span class="sm-block">
+                          <a class="m-l-10 m-r-10" href="{{ link.url }}">{{ link.title }}</a>
                         </span>
                       {% endfor %}
-					</ul>
 
 
 

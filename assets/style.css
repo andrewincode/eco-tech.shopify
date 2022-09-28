@@ -102,11 +102,13 @@ h1.page-title span {
 .separator {
 	margin-bottom:  20px;
 }
-p.left-footer-menu > span.sm-block::before {
+p.left-footer-menu > span.sm-block::before,
+p.right-footer-menu > span.sm-block::before {
   color: #777;
   content: " | ";
 }
-p.left-footer-menu > span.sm-block:nth-child(4)::before {
+p.left-footer-menu > span.sm-block:nth-child(4)::before,
+p.right-footer-menu:not(:first-child) > span.sm-block::before {
   content: none;
 }
 

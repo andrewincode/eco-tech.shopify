@@ -16,12 +16,12 @@
             </div>
             <div class="carousel-item">
               {% for block in section.blocks %}
-                <img src="{{ block.settings.homepage_slide_img_2 | img_url: '1024x' | img_tag: 'alt text' }}">
+                {{ block.settings.homepage_slide_img_2 | img_url: '1024x' | img_tag: 'alt text' }}
               {% endfor %}
             </div>
             <div class="carousel-item">
               {% for block in section.blocks %}
-                <img src="{{ block.settings.homepage_slide_img_3 | img_url: '1024x' | img_tag: 'alt text' }}">
+                {{ block.settings.homepage_slide_img_3 | img_url: '1024x' | img_tag: 'alt text' }}
               {% endfor %}
             </div>
           </div>

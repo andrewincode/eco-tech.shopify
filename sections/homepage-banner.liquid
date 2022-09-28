@@ -44,9 +44,7 @@
             </div>
             <div class="card-footer">
               {% for block in section.blocks %}
-              {% if section.settings.welcome-btn != blank %}
-                <a href="{{ section.settings.welcome-link }}" class="text-black hint-text text-sm">{{ section.settings.welcome-btn }}</a>
-              {% endif %}
+                <a href="{{ block.settings.welcome-link }}" class="text-black hint-text text-sm">{{ block.settings.welcome-btn }}</a>
               {% endfor %}
             </div>
           </div>

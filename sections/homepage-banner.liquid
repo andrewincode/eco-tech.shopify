@@ -1,6 +1,13 @@
 <!-- Homepage Banner Section . start -->
   <div class="card-content page-banner">
-    <div class="row  d-flex flex-row collage">        
+    <div class="row  d-flex flex-row collage">
+      {% for block in section.blocks %}
+        {% case block.type %}
+          {% when '@app' %}
+            {% render block %}
+            ...
+          {% endcase %}
+        {% endfor %}       
     </div>
   </div>
 <!-- Homepage Banner Section . end -->

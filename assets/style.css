@@ -102,7 +102,7 @@ h1.page-title span {
 .separator {
 	margin-bottom:  20px;
 }
-#section-bottom .sm-block:not(first-child)::before {
+#section-bottom .sm-block:not(:first-child)::before {
   color: #777;
   content: " | ";
 }

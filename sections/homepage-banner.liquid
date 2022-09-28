@@ -11,7 +11,7 @@
           <div class="carousel-inner">
             <div class="carousel-item active">
               {% for block in section.blocks %}
-                <img src="{{ block.settings.homepage_slide_img_1 | img_url: '1024x' | img_tag: 'alt text' }}">
+                {{ block.settings.homepage_slide_img_1 | img_url: '1024x' | img_tag: 'alt text' }}
               {% endfor %}
             </div>
             <div class="carousel-item">

@@ -31,23 +31,24 @@
       <!-- Slideshow Block . end -->
       <!-- Welcome Block . start -->
         <div class="col col-lg-4 bg-warning no-border">
-          <div class="card card-transparent m-b-0">
-            <div class="card-header separator">
-              <div class="card-title">
-                  <h2 class="fs-18">Sustainability<br> Innovation<br> Beauty</h2>
+          {% for block in section.blocks %}
+            <div class="card card-transparent m-b-0">
+              <div class="card-header separator">
+                <div class="card-title">
+                    <h2 class="fs-18">{{ block.settings.welcome-heading }}</h2>
+                </div>
+              </div>
+              <div class="card-body">
+                {{ block.settings.welcome-content }}
+                <p>The marriage of sustainability and cutting-edge building technology has shaped the foundation of Diasen’s philosophy.</p>
+                <p>Founded in Sassoferrato, Italy in 1985, Diasen is a leader in green building technology, offering lime and local cork based products including insulating solutions, acoustic and thermal insulation, waterproofing and decorative coatings.</p>
+                <p>Diasen’s products have been used in projects from the restoration and preservation of significant historical buildings to modern homes and public spaces showcasing innovative and sustainable design.</p>
+              </div>
+              <div class="card-footer">
+                  <a href="{{ block.settings.welcome-link }}" class="text-black hint-text text-sm">{{ block.settings.welcome-btn }}</a>
               </div>
             </div>
-            <div class="card-body">
-              <p>The marriage of sustainability and cutting-edge building technology has shaped the foundation of Diasen’s philosophy.</p>
-              <p>Founded in Sassoferrato, Italy in 1985, Diasen is a leader in green building technology, offering lime and local cork based products including insulating solutions, acoustic and thermal insulation, waterproofing and decorative coatings.</p>
-              <p>Diasen’s products have been used in projects from the restoration and preservation of significant historical buildings to modern homes and public spaces showcasing innovative and sustainable design.</p>
-            </div>
-            <div class="card-footer">
-              {% for block in section.blocks %}
-                <a href="{{ block.settings.welcome-link }}" class="text-black hint-text text-sm">{{ block.settings.welcome-btn }}</a>
-              {% endfor %}
-            </div>
-          </div>
+          {% endfor %}
         </div>
       <!-- Welcome Block . end -->
     </div>

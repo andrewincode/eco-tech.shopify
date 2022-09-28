@@ -91,6 +91,7 @@ h1.page-title span {
     padding-bottom: 1.25rem;
     color: #fff;
     text-align: center;
+  rgba(0, 0, 0, .5)
 }
 .card-content {
 }

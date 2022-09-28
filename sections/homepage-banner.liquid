@@ -10,7 +10,9 @@
           </ol>
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img class="d-block w-100" src="..." alt="First slide">
+              {% for block in section.blocks %}
+                <img class="d-block w-100" src="{{ block.settings.homepage_slide_img_1 | img_url: '1024x'| img_tag: block.settings.homepage_slide_imgalt_1 }}" alt="First slide">
+              {% endfor %}}
             </div>
             <div class="carousel-item">
               <img class="d-block w-100" src="..." alt="Second slide">
@@ -71,48 +73,63 @@
           "settings": [
             {
              "type": "image_picker",
-             "id": "homepage_slide_1",
-             "label": "Homepage Slide 1"
+             "id": "homepage_slide_img_1",
+             "label": "Homepage Slider Image 1"
+            },
+            {
+            "id": "homepage_slide_imgalt_1",
+            "type": "text",
+            "label": "Image 1 Description"
             },
             {
             "id": "homepage_slide_heading_1",
             "type": "text",
-            "label": "Homepage Slide Heading 1"
+            "label": "Homepage Slider Heading 1"
             },
             {
             "id": "homepage_slide_caption_1",
             "type": "textarea",
-            "label": "Homepage Slide Caption 1"
+            "label": "Homepage Slider Caption 1"
             },
             {
              "type": "image_picker",
-             "id": "homepage_slide_2",
-             "label": "Homepage Slide 2"
+             "id": "homepage_slide_img_2",
+             "label": "Homepage Slider Image 2"
+            },
+            {
+            "id": "homepage_slide_imgalt_2",
+            "type": "text",
+            "label": "Image 2 Description"
             },
             {
             "id": "homepage_slide_heading_2",
             "type": "text",
-            "label": "Homepage Slide Heading 2"
+            "label": "Homepage Slider Heading 2"
             },
             {
             "id": "homepage_slide_caption_2",
             "type": "textarea",
-            "label": "Homepage Slide Caption 2"
+            "label": "Homepage Slider Caption 2"
             },
             {
              "type": "image_picker",
-             "id": "homepage_slide_3",
-             "label": "Homepage Slide 3"
+             "id": "homepage_slide_img_3",
+             "label": "Homepage Slider Image 3"
+            },
+            {
+            "id": "homepage_slide_imgalt_3",
+            "type": "text",
+            "label": "Image 3 Description"
             },
             {
             "id": "homepage_slide_heading_3",
             "type": "text",
-            "label": "Homepage Slide Heading 3"
+            "label": "Homepage Slider Heading 3"
             },
             {
             "id": "homepage_slide_caption_3",
             "type": "textarea",
-            "label": "Homepage Slide Caption 3"
+            "label": "Homepage Slider Caption 3"
             }
           ]
         },

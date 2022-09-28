@@ -8,10 +8,13 @@
           "77dee4e0-9f93-4d44-93d9-d34315e0daaf": {
             "type": "HTML",
             "settings": {
+              "homepage_slide_1": "shopify:\/\/shop_images\/slide1.jpg",
               "homepage_slide_heading_1": "",
               "homepage_slide_caption_1": "",
+              "homepage_slide_2": "shopify:\/\/shop_images\/slide2.jpg",
               "homepage_slide_heading_2": "",
               "homepage_slide_caption_2": "",
+              "homepage_slide_3": "shopify:\/\/shop_images\/slide3.jpg",
               "homepage_slide_heading_3": "",
               "homepage_slide_caption_3": ""
             }

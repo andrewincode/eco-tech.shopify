@@ -35,11 +35,11 @@
             <div class="card card-transparent m-b-0">
               <div class="card-header separator">
                 <div class="card-title">
-                    <h2 class="fs-18">{{ block.settings.welcome-heading }}</h2>
+                    <h2 class="fs-18">{{ block.settings.welcome-heading | newline_to_br }}</h2>
                 </div>
               </div>
               <div class="card-body">
-                {{ block.settings.welcome-content }}
+                {{ block.settings.welcome-content | newline_to_br }}
               </div>
               <div class="card-footer">
                   <a href="{{ block.settings.welcome-link }}" class="text-black hint-text text-sm">{{ block.settings.welcome-btn }}</a>

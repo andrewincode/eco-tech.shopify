@@ -107,7 +107,7 @@ p.left-footer-menu > span.sm-block::before {
   content: " | ";
 }
 p.left-footer-menu > span:nth-child(4) {
-  content: none;
+  content: "";
 }
 
 /* Font Sizing */

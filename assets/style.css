@@ -83,7 +83,14 @@ h1.page-title span {
   height: 467px;
 }
 .carousel-caption {
-    bottom: 5.25rem;
+    position: absolute;
+    right: 0%;
+    bottom: 1.25rem;
+    left: 0%;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    color: #fff;
+    text-align: center;
 }
 .card-content {
 }

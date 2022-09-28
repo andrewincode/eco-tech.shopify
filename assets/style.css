@@ -108,7 +108,7 @@ p.right-footer-menu > span.sm-block::before {
   content: " | ";
 }
 p.left-footer-menu > span.sm-block:nth-child(4)::before,
-p.right-footer-menu:not(:first-child) > span.sm-block::before {
+p.right-footer-menu > span.sm-block:nth-child(1)::before {
   content: none;
 }
 

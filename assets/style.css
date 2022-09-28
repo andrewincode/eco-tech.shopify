@@ -102,7 +102,7 @@ h1.page-title span {
 .separator {
 	margin-bottom:  20px;
 }
-#section-bottom .sm-block::before {
+#section-bottom .sm-block:not(first-of-type)::before {
   color: #777;
   content: " | ";
 }

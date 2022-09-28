@@ -102,6 +102,9 @@ h1.page-title span {
 .separator {
 	margin-bottom:  20px;
 }
+#section-bottom .sm-block::before {
+  content: " | ";
+}
 
 /* Font Sizing */
 

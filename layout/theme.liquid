@@ -55,6 +55,7 @@
 							<h2 class="page-title align-self-end">{{ shop.name }}</h2>
 						</div>
 					</div>
+    				{% section 'homepage-banner' %}
 					<div class="card-footer">
 						<nav id="section-menu">
 							<div class="menu-bar header-sm-height">
@@ -80,7 +81,6 @@
 			</div>
     		{{ content_for_index }}
     		{{ content_for_layout }}
-    		{% section 'homepage-banner' %}
 			<div id="section-main" class="page-content-wrapper">
 				<div class="content">
 					<div class="container container-fixed-lg sm-gutter no-padding">

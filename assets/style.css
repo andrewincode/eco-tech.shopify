@@ -79,9 +79,9 @@ h1.page-title span {
 .inspiration-image img {
 	max-width:  100%;
 }
-.carousel-item {
-    height: 500px;
-    }
+.carousel, .carousel-item {
+  height: 467px;
+}
 .carousel-caption {
     bottom: 5.25rem;
 }

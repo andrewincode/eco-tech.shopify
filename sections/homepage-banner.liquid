@@ -11,7 +11,7 @@
           <div class="carousel-inner">
             <div class="carousel-item active">
               {% for block in section.blocks %}
-                {{ block.settings.homepage_slide_img_1 | image_url: width: 1024 | image_tag }}
+                {{ block.settings.homepage_slide_img_1 | image_url: width: 1024 | image_tag: '' }}
                 <div class="carousel-caption d-none d-md-block">
                   <h5>{{ block.settings.homepage_slide_heading_1 }}</h5>
                   <p>{{ block.settings.homepage_slide_caption_1 }}</p>
@@ -20,7 +20,7 @@
             </div>
             <div class="carousel-item">
               {% for block in section.blocks %}
-                {{ block.settings.homepage_slide_img_2 | image_url: width: 1024 | image_tag }}
+                {{ block.settings.homepage_slide_img_2 | image_url: width: 1024 | image_tag: '' }}
                 <div class="carousel-caption d-none d-md-block">
                   <h5>{{ block.settings.homepage_slide_heading_2 }}</h5>
                   <p>{{ block.settings.homepage_slide_caption_2 }}</p>
@@ -29,7 +29,7 @@
             </div>
             <div class="carousel-item">
               {% for block in section.blocks %}
-                {{ block.settings.homepage_slide_img_3 | image_url: width: 1024 | image_tag }}
+                {{ block.settings.homepage_slide_img_3 | image_url: width: 1024 | image_tag: '' }}
                 <div class="carousel-caption d-none d-md-block">
                   <h5>{{ block.settings.homepage_slide_heading_3 }}</h5>
                   <p>{{ block.settings.homepage_slide_caption_3 }}</p>

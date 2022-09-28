@@ -12,16 +12,29 @@
             <div class="carousel-item active">
               {% for block in section.blocks %}
                 {{ block.settings.homepage_slide_img_1 | image_url: width: 1024 | image_tag }}
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>My Caption Title (1st Image)</h5>
+                  <p>The whole caption will only show up if the screen is at least medium size.</p>
+                </div>
+            </div>
               {% endfor %}
             </div>
             <div class="carousel-item">
               {% for block in section.blocks %}
                 {{ block.settings.homepage_slide_img_2 | image_url: width: 1024 | image_tag }}
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>My Caption Title (2nd Image)</h5>
+                  <p>The whole caption will only show up if the screen is at least medium size.</p>
+                </div>
               {% endfor %}
             </div>
             <div class="carousel-item">
               {% for block in section.blocks %}
                 {{ block.settings.homepage_slide_img_3 | image_url: width: 1024 | image_tag }}
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>My Caption Title (3rd Image)</h5>
+                  <p>The whole caption will only show up if the screen is at least medium size.</p>
+                </div>
               {% endfor %}
             </div>
           </div>

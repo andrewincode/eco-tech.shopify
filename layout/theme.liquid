@@ -60,14 +60,15 @@
 									<i class="pg-icon">close</i>
 								</a>
 								<ul>
-									<li><a href=""><span class="title">Interior Finishing</span></a></li>
-									<li><a href=""><span class="title">Exterior Finishing</span></a></li>
-									<li><a href=""><span class="title">Insulation</span></a></li>
-									<li><a href=""><span class="title">Soundproofing</span></a></li>
-									<li><a href=""><span class="title">Resources</span></a></li>
-									<li><a href="index.html">Home</a></li>
-									<li><a href=""><span class="title">All Products</span></a></li>
-									<li><a href=""><span class="title">Support</span></a></li>
+                                  {% for link in linklists.main-menu.links %}
+                                    <li>
+                                      <a class="m-l-10 m-r-10" href="{{ link.url }}">
+                                        <span class="title">{{ link.title }}</span>
+                                      </a>
+                                    </li>
+                                      <a class="m-l-10 m-r-10" href="{{ link.url }}">{{ link.title }}</a>
+                                    </span>
+                                  {% endfor %}
 								</ul>
 								<a href="#" class="search-link d-flex justify-content-between align-items-center d-lg-none"
 								data-toggle="search">Tap here to search <i class="pg-search float-right"></i></a>

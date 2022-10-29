@@ -25,7 +25,15 @@
 								<div class="pull-left">via <span class="text-complete">Guides</span></div>
 								<div class="pull-right hint-text">
 									{%- if section.settings.blog_show_date -%}
-										{{ article.published_at | time_tag: format: '%a' }}
+                    {% assign day = page.date | date: "%-d"  %}
+                    {% case day %}
+                      {% when '1' or '21' or '31' %}{{ day }}st
+                      {% when '2' or '22' %}{{ day }}nd
+                      {% when '3' or '23' %}{{ day }}rd
+                      {% else %}{{ day }}th
+                    {% endcase %}
+                    {{ page.date | date: "of %B, %Y" }}
+										<!-- {{ article.published_at | time_tag: format: '%a' }} -->
 									{%- endif -%}
 								</div>
 								<div class="clearfix"></div>

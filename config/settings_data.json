@@ -35,6 +35,22 @@
         ],
         "settings": {
         }
+      },
+      "section-solutions": {
+        "type": "section-solutions",
+        "settings": {
+        }
+      },
+      "section-featured-posts": {
+        "type": "section-featured-posts",
+        "settings": {
+          "title": "Blog posts",
+          "blog": "how-to-guides",
+          "post_limit": 4,
+          "blog_show_author": false,
+          "blog_show_date": true,
+          "show_view_all": false
+        }
       }
     },
     "content_for_index": [

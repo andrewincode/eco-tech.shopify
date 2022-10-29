@@ -25,7 +25,7 @@
 								<div class="pull-left">via <span class="text-complete">Guides</span></div>
 								<div class="pull-right hint-text">
 									{%- if section.settings.blog_show_date -%}
-										{{ article.published_at | time_tag: date }}
+										{{ article.published_at | time_tag: format: '%a' }}
 									{%- endif -%}
 								</div>
 								<div class="clearfix"></div>
@@ -79,7 +79,10 @@
       "id": "show_view_all",
       "label": "Show 'View all' button",
       "default": false
-    }
+    },
+    "date_formats": {
+	  "month_day_year": "%B %d, %Y"
+	}
   ],
   "presets": [
     {

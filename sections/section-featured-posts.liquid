@@ -25,7 +25,7 @@
 								<div class="pull-left">via <span class="text-complete">Guides</span></div>
 								<div class="pull-right hint-text">
 									{%- if section.settings.blog_show_date -%}
-										{{ article.published_at | time_tag: format: 'month_day_year' }}
+										{{ article.published_at | time_tag: date }}
 									{%- endif -%}
 								</div>
 								<div class="clearfix"></div>

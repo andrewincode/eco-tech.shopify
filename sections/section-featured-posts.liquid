@@ -1,5 +1,4 @@
 {%- assign blog = blogs[section.settings.blog] -%}
-{% for blog in blogs %}
 {%- if blog.articles_count > 0 -%}
 	<div id="section-featured-posts" class="container container-fixed-lg sm-gutter no-padding">
 		<div class="d-flex flex-row align-items-stretch">
@@ -38,7 +37,6 @@
 		</div>
 	</div>
 {%- endif -%}
-{%- endfor -%}
 {% schema %}
 {
   "name": "Blog posts",

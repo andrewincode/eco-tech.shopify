@@ -3,7 +3,36 @@
 	<div id="section-featured-posts" class="container container-fixed-lg sm-gutter no-padding">
 		<div class="d-flex flex-row align-items-stretch">
     		{%- for article in blog.articles limit: section.settings.post_limit -%}
-    		hello
+    			<a href="{{ article.url }}">
+					<div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 p-2">
+						<div class="card social-card share  full-width m-b-10 no-border" data-social="item">
+							<div class="card-header ">
+								<h5 class="text-complete pull-left fs-12">Flooring <i class="fa fa-circle text-complete fs-11 hide"></i></h5>
+								<div class="pull-right small hint-text">
+									<a href="">how-to <i class="fa fa-comment-o"></i></a>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+							<div class="card-content">
+								{%- if article.image -%}
+					            	{{ article | img_url: '150x150', scale: 2 | img_tag: '' }}
+					          	{%- endif -%}
+							</div>
+							<a href=""><div class="card-description">
+								<h3>{{ article.title }}</h3>
+							</div></a>
+							<div class="card-footer clearfix">
+								<div class="pull-left">via <span class="text-complete">Guides</span></div>
+								<div class="pull-right hint-text">
+									{%- if section.settings.blog_show_date -%}
+										{{ article.published_at | time_tag: format: 'month_day_year' }}
+									{%- endif -%}
+								</div>
+								<div class="clearfix"></div>
+							</div>
+						</div>
+					</div>
+				</a>
     		{%- endfor -%}
 		</div>
 	</div>

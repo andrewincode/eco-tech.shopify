@@ -1,5 +1,5 @@
 {%- assign blog = blogs[section.settings.blog] -%}
-<!-- {%- if blog.articles_count > 0 -%} --<
+<!-- {%- if blog.articles_count > 0 -%} -->
 	<div id="section-featured-posts" class="container container-fixed-lg sm-gutter no-padding">
 		<div class="d-flex flex-row align-items-stretch">
 
@@ -77,14 +77,14 @@
       "label": "Blog"
     },
     {
-      "id": "blog2",
+      "id": "news",
       "type": "blog",
-      "label": "Blog 2"
+      "label": "News"
     },
     {
-      "id": "blog3",
+      "id": "how-to-guides",
       "type": "blog",
-      "label": "Blog 3"
+      "label": "How-to Guides"
     },
     {
       "type": "range",
@@ -94,12 +94,6 @@
       "max": 4,
       "step": 1,
       "default": 4
-    },
-    {
-      "type": "checkbox",
-      "id": "blog_show_author",
-      "label": "Show author",
-      "default": false
     },
     {
       "type": "checkbox",

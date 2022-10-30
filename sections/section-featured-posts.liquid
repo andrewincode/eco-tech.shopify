@@ -1,5 +1,5 @@
 {%- assign blog = blogs[section.settings.blog] -%}
-{% comment %} {%- if blog.articles_count > 0 -%} {% endcomment %}
+{% comment %} {%- xif blog.articles_count > 0 -%} {% endcomment %}
 	<div id="section-featured-posts" class="container container-fixed-lg sm-gutter no-padding">
 		<div class="d-flex flex-row align-items-stretch">
 
@@ -58,7 +58,7 @@
 
 		</div>
 	</div>
-{% comment %} {%- endif -%} {% endcomment %}
+{% comment %} {%- xendif -%} {% endcomment %}
 {% schema %}
 {
   "name": "Blog posts",

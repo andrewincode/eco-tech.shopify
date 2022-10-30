@@ -45,7 +45,7 @@
         "type": "section-featured-posts",
         "settings": {
           "title": "Blog posts",
-          "blog": "how-to-guides",
+          "blog": "",
           "post_limit": 4,
           "blog_show_author": false,
           "blog_show_date": true,

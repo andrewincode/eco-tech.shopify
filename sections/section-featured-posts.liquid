@@ -2,6 +2,26 @@
 {%- if blog.articles_count > 0 -%}
 	<div id="section-featured-posts" class="container container-fixed-lg sm-gutter no-padding">
 		<div class="d-flex flex-row align-items-stretch">
+
+      {% if section.settings.blog != blank %}
+        {% for blog in section.settings.blog %}    
+           <p>{{blog.title}}</p>
+        {% endfor %}
+      {% endif %}
+
+      {% if section.settings.blog2 != blank %}
+        {% for blog in section.settings.blog2 %}    
+           <p>{{blog.title}}</p>
+        {% endfor %}
+      {% endif %}
+
+      {% if section.settings.blog3 != blank %}
+        {% for blog in section.settings.blog3 %}    
+           <p>{{blog.title}}</p>
+        {% endfor %}
+      {% endif %}
+
+    <!--
     		{%- for article in blog.articles limit: section.settings.post_limit -%}
     			<a href="{{ article.url }}">
 					<div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 p-2">
@@ -34,13 +54,16 @@
 					</div>
 				</a>
     		{%- endfor -%}
+
+        -->
+
 		</div>
 	</div>
 {%- endif -%}
 {% schema %}
 {
   "name": "Blog posts",
-  "class": "index-section",
+  "class": "featured-blog-section",
   "settings": [
     {
       "type": "text",

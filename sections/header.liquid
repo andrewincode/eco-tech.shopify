@@ -1,12 +1,12 @@
-<noscript>{{ 'eco.pace-theme-flash.css' | asset_url | stylesheet_tag }}</noscript>
-<noscript>{{ 'eco.bootstrap.min.css' | asset_url | stylesheet_tag }}</noscript>
-<noscript>{{ 'eco.jquery.scrollbar.css' | asset_url | stylesheet_tag }}</noscript>
-<noscript>{{ 'eco.select2.min.css' | asset_url | stylesheet_tag }}</noscript>
-<noscript>{{ 'eco.pages.min.css' | asset_url | stylesheet_tag }}</noscript>
+{{ 'eco.pace-theme-flash.css' | asset_url | stylesheet_tag }}
+{{ 'eco.bootstrap.min.css' | asset_url | stylesheet_tag }}
+{{ 'eco.jquery.scrollbar.css' | asset_url | stylesheet_tag }}
+{{ 'eco.select2.min.css' | asset_url | stylesheet_tag }}
+{{ 'eco.pages.min.css' | asset_url | stylesheet_tag }}
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
-<noscript>{{ 'eco.style.css' | asset_url | stylesheet_tag }}</noscript>
-<noscript>{{ 'eco.ecotech.css' | asset_url | stylesheet_tag }}</noscript>
-<noscript>{{ 'eco.colours.css' | asset_url | stylesheet_tag }}</noscript>
+{{ 'eco.style.css' | asset_url | stylesheet_tag }}
+{{ 'eco.ecotech.css' | asset_url | stylesheet_tag }}
+{{ 'eco.colours.css' | asset_url | stylesheet_tag }}
 
 <{% if section.settings.enable_sticky_header %}sticky-header{% else %}div{% endif %} class="header-wrapper color-{{ section.settings.color_scheme }} gradient{% if section.settings.show_line_separator %} header-wrapper--border-bottom{% endif %}">
   <header class="header header--{{ section.settings.logo_position }} header--mobile-{{ section.settings.mobile_logo_position }} page-width{% if section.settings.menu != blank %} header--has-menu{% endif %}">

@@ -9,14 +9,14 @@
         {% endfor %}
       {% endif %}
 
-      {% if section.settings.blog2 != blank %}
-        {% for blog in section.settings.blog2 %}    
+      {% if section.settings.news != blank %}
+        {% for blog in section.settings.news %}    
            <p>{{blog.title}}</p>
         {% endfor %}
       {% endif %}
 
-      {% if section.settings.blog3 != blank %}
-        {% for blog in section.settings.blog3 %}    
+      {% if section.settings.how-to-guides != blank %}
+        {% for blog in section.settings.how-to-guides %}    
            <p>{{blog.title}}</p>
         {% endfor %}
       {% endif %}

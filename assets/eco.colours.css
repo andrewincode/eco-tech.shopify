@@ -1,0 +1,17 @@
+/* BLUE */
+
+a, a:focus, a:hover, a:active {
+    color: #a0b5cd;
+}
+a:focus, a:hover {
+    color:  #738395;
+}
+
+/* GREEN */
+
+.btn-success, .btn-success:focus {
+    color: #90a645;
+    background-color: #c0dd5c;
+    border: 1px solid #B8D458;
+    border-bottom: 1px solid #B8D458;
+}

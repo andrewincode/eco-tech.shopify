@@ -106,6 +106,20 @@
   }
 {%- endstyle -%}
 
+{% comment %} ECOTECH CSS {% endcomment %}
+
+<noscript>{{ 'eco.pace-theme-flash.css' | asset_url | stylesheet_tag }}</noscript>
+<noscript>{{ 'eco.bootstrap.min.css' | asset_url | stylesheet_tag }}</noscript>
+<noscript>{{ 'eco.jquery.scrollbar.css' | asset_url | stylesheet_tag }}</noscript>
+<noscript>{{ 'eco.select2.min.css' | asset_url | stylesheet_tag }}</noscript>
+<noscript>{{ 'eco.pages.min.css' | asset_url | stylesheet_tag }}</noscript>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
+<noscript>{{ 'eco.style.css' | asset_url | stylesheet_tag }}</noscript>
+<noscript>{{ 'eco.ecotech.css' | asset_url | stylesheet_tag }}</noscript>
+<noscript>{{ 'eco.colours.css' | asset_url | stylesheet_tag }}</noscript>
+
+{% comment %} end ECOTECH CSS {% endcomment %}
+
 <script src="{{ 'details-disclosure.js' | asset_url }}" defer="defer"></script>
 <script src="{{ 'details-modal.js' | asset_url }}" defer="defer"></script>
 <script src="{{ 'cart-notification.js' | asset_url }}" defer="defer"></script>

@@ -1,5 +1,10 @@
 {
   "sections": {
+    "slideshow": {
+      "type": "slideshow",
+      "settings": {
+      }
+    },
     "multicolumn": {
       "type": "multicolumn",
       "settings": {
@@ -21,6 +26,7 @@
     }
   },
   "order": [
-    "multicolumn"
+    "multicolumn",
+    "slideshow"
   ]
 }
